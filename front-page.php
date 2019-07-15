@@ -118,7 +118,7 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex justify-content-between">
+								<div class="pp-news__list d-flex flex-column flex-lg-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/event.jpg" alt="">
@@ -130,7 +130,7 @@ $container = get_theme_mod('understrap_container_type');
 							</div>
 							<!-- END col-md-6 -->
 							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex justify-content-between">
+								<div class="pp-news__list d-flex flex-column flex-lg-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/gourmet.jpg" alt="">
@@ -142,7 +142,7 @@ $container = get_theme_mod('understrap_container_type');
 							</div>
 							<!-- END col-md-6 -->
 							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex justify-content-between">
+								<div class="pp-news__list d-flex flex-column flex-lg-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/shopping.jpg" alt="">
@@ -154,7 +154,7 @@ $container = get_theme_mod('understrap_container_type');
 							</div>
 							<!-- END col-md-6 -->
 							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex justify-content-between">
+								<div class="pp-news__list d-flex flex-column flex-lg-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/sightseeing.jpg" alt="">
