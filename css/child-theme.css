@@ -11730,8 +11730,7 @@ figure.woocommerce-product-gallery__wrapper {
           -ms-flex-align: center;
               align-items: center; } }
 
-.p-cover .p-recommend__headline,
-.p-news .p-recommend__headline {
+.p-recommend__headline {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.5;
@@ -11741,18 +11740,15 @@ figure.woocommerce-product-gallery__wrapper {
   background-repeat: no-repeat;
   margin-bottom: 20px; }
 
-.p-cover .p-recommend__content,
-.p-news .p-recommend__content {
+.p-recommend__content {
   background: #dedede;
   opacity: 0.6;
   padding: 28px 20px; }
 
-.p-cover .p-sidebar ul,
-.p-news .p-sidebar ul {
+.p-sidebar ul {
   margin-left: 20px; }
 
-.p-cover .p-sidebar__list,
-.p-news .p-sidebar__list {
+.p-sidebar__list {
   width: 330px;
   height: 90px;
   padding: 12px 8px 12px 40px;
@@ -11761,15 +11757,12 @@ figure.woocommerce-product-gallery__wrapper {
   opacity: 0.85;
   position: relative;
   margin-bottom: 10px; }
-  .p-cover .p-sidebar__list:last-child,
-  .p-news .p-sidebar__list:last-child {
+  .p-sidebar__list:last-child {
     margin-bottom: 0; }
-  .p-cover .p-sidebar__list--image,
-  .p-news .p-sidebar__list--image {
+  .p-sidebar__list--image {
     width: 64px;
     height: 64px; }
-  .p-cover .p-sidebar__list::before,
-  .p-news .p-sidebar__list::before {
+  .p-sidebar__list::before {
     position: absolute;
     left: 4px;
     top: 50%;
