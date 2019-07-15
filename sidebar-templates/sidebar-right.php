@@ -32,24 +32,40 @@ $sidebar_pos = get_theme_mod('understrap_sidebar_position');
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia nulla purus. Integer imperdiet, sem vel pulvinar vehicula, nisl nunc elementum tortor, eu dignissim dui nibh ut massa. Nulla efficitur est purus, sed semper risus euismod eu. Nunc condimentum dui nec orci ornare, at rhoncus enim mollis. Nullam convallis libero quis tempor cursus. Donec laoreet egestas urna id volutpat. Nullam sit amet gravida eros, et imperdi</p>
 			</li>
 			<li class="d-flex p-sidebar__list">
-				<p class="p-sidebar__list--text">malesuada fames ac turpis egestas. Donec ac faucibus </p>
-				<img src="<?php $upload_dir = wp_upload_dir();
-									echo $upload_dir['baseurl']; ?>/2019/07/mail_circle.png" class="p-sidebar__list--image" alt="">
+				<div class="p-sidebar__list--text">
+					<p>malesuada fames</p>
+				</div>
+				<div class="p-sidebar__list--image">
+					<img src="<?php $upload_dir = wp_upload_dir();
+										echo $upload_dir['baseurl']; ?>/2019/07/mail_circle.png" alt="">
+				</div>
 			</li>
 			<li class="d-flex p-sidebar__list">
-				<p class="p-sidebar__list--text">malesuada fames ac turpis egestas. Donec ac faucibus </p>
-				<img src="<?php $upload_dir = wp_upload_dir();
-									echo $upload_dir['baseurl']; ?>/2019/07/info_circle.png" class="p-sidebar__list--image" alt="">
+				<div class="p-sidebar__list--text">
+					<p>malesuada fames.</p>
+				</div>
+				<div class="p-sidebar__list--image">
+					<img src="<?php $upload_dir = wp_upload_dir();
+										echo $upload_dir['baseurl']; ?>/2019/07/info_circle.png" alt="">
+				</div>
 			</li>
 			<li class="d-flex p-sidebar__list">
-				<p class="p-sidebar__list--text">malesuada fames ac turpis egestas. Donec ac faucibus </p>
-				<img src="<?php $upload_dir = wp_upload_dir();
-									echo $upload_dir['baseurl']; ?>/2019/07/light_meal.png" class="p-sidebar__list--image" alt="">
+				<div class="p-sidebar__list--text">
+					<p>malesuada fames.</p>
+				</div>
+				<div class="p-sidebar__list--image">
+					<img src="<?php $upload_dir = wp_upload_dir();
+										echo $upload_dir['baseurl']; ?>/2019/07/light_meal.png" alt="">
+				</div>
 			</li>
 			<li class="d-flex p-sidebar__list">
-				<p class="p-sidebar__list--text">malesuada fames ac turpis egestas. Donec ac faucibus </p>
-				<img src="<?php $upload_dir = wp_upload_dir();
-									echo $upload_dir['baseurl']; ?>/2019/07/chat_dazzle.png" class="p-sidebar__list--image" alt="">
+				<div class="p-sidebar__list--text">
+					<p>malesuada fames.</p>
+				</div>
+				<div class="p-sidebar__list--image">
+					<img src="<?php $upload_dir = wp_upload_dir();
+										echo $upload_dir['baseurl']; ?>/2019/07/chat_dazzle.png" alt="">
+				</div>
 			</li>
 		</ul>
 
