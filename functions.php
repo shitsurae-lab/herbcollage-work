@@ -49,8 +49,8 @@ function theme_enqueue_styles()
 function yomogi_setup()
 {
     register_nav_menus(array(
-        'global' => 'グローバル',
-        'footer' => 'フッター'
+        'global' => 'Global Navigation',
+        'footer' => 'Footer Navigation'
 
     ));
 }
