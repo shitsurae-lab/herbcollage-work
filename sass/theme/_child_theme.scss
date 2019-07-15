@@ -1,0 +1,176 @@
+// Definition
+
+$mq-breakpoints: (
+  "xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+@mixin mq($breakpoint: medium) {
+  @media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin bg-gradient(
+  $angle: 180deg,
+  $color: rgba(217, 229, 214, 0.8),
+  $amount: 20%
+) {
+  background: linear-gradient($angle, $color, adjust-hue($color, $amount)) fixed;
+}
+
+// Header --header.php
+
+.p-headerContent {
+  width: 100%;
+
+  @include mq(md) {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @include mq(lg) {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  @include mq(xl) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+// Home --front-page
+
+.p-cover,
+.p-news {
+  h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    color: #555;
+    padding-left: 20px;
+    border-left: solid 4px #355d9a;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #555;
+  }
+
+  &__headline {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    color: #555;
+    padding-left: 20px;
+    border-left: solid 4px #355d9a;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  &__recommend li {
+    list-style-type: none;
+  }
+
+  &__list {
+    border: solid 1px #a7bed3;
+    border-radius: 4px;
+    padding: 12px;
+    width: 92%;
+    margin: 0 auto;
+  }
+  &__image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__letter {
+    width: 55%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.p-recommend {
+  &__headline {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    color: #555;
+    padding-left: 20px;
+    border-left: solid 4px #355d9a;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  &__content {
+    background: #dedede;
+    opacity: 0.6;
+    padding: 28px 20px;
+  }
+}
+// .p-news {
+//   h2 {
+//     font-weight: 400;
+//     font-size: 1.5rem;
+//     line-height: 2.5;
+//     color: #555;
+//     padding-left: 20px;
+//     border-left: solid 4px #355d9a;
+//     background-repeat: no-repeat;
+//   }
+
+//   h3 {
+//     font-weight: 400;
+//     font-size: 1.25rem;
+//     line-height: 1.8;
+//     color: #555;
+//   }
+
+//   &__recommend li {
+//     list-style-type: none;
+//   }
+// }
+
+.p-sidebar {
+  ul {
+    margin-left: 20px;
+  }
+  &__list {
+    width: 330px;
+    height: 90px;
+    padding: 12px 8px 12px 40px;
+    background: #fff;
+    border: 2px solid #355d9a;
+    opacity: 0.85;
+    position: relative;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--image {
+      width: 64px;
+      height: 64px;
+    }
+    &::before {
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: url("http://mimi.info/wp-content/uploads/2019/07/arrow-blue.png");
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
