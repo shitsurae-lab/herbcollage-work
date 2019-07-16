@@ -44,6 +44,75 @@ $mq-breakpoints: (
   }
 }
 
+//Global navigation
+
+.p-globalNav {
+  &__menu {
+    width: 100%;
+    @include mq(lg) {
+      width: 60%;
+    }
+  }
+  &__list {
+    width: 100%;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(lg) {
+      width: 33.333%;
+      height: 80px;
+      padding-left: 16px;
+      padding-right: 16px;
+      align-items: flex-end;
+      border-left: dashed 1px rgba(255, 255, 255, 0.6);
+
+      &:last-child {
+        border-right: dashed 1px rgba(255, 255, 255, 0.6);
+      }
+      .home & a {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        text-align: center;
+        line-height: 80px;
+        &::before {
+          position: absolute;
+          top: -4px;
+          left: 50%;
+          width: 36px;
+          height: 36px;
+          transform: translateX(-50%);
+          content: "";
+          background-image: url("http://mimi.info/wp-content/uploads/2019/07/chicken.png");
+          background-repeat: no-repeat;
+        }
+      }
+      .cafe & a {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        text-align: center;
+        line-height: 80px;
+        &::before {
+          position: absolute;
+          top: -4px;
+          left: 50%;
+          width: 36px;
+          height: 36px;
+          transform: translateX(-50%);
+          content: "";
+          background-image: url("http://mimi.info/wp-content/uploads/2019/07/cafe.png");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
 // Home --front-page
 
 .p-cover,
@@ -137,29 +206,17 @@ $mq-breakpoints: (
     opacity: 0.6;
     padding: 28px 20px;
   }
+  &__image {
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-family: "Source Han Code JP";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #39a9db;
+  }
 }
-// .p-news {
-//   h2 {
-//     font-weight: 400;
-//     font-size: 1.5rem;
-//     line-height: 2.5;
-//     color: #555;
-//     padding-left: 20px;
-//     border-left: solid 4px #355d9a;
-//     background-repeat: no-repeat;
-//   }
-
-//   h3 {
-//     font-weight: 400;
-//     font-size: 1.25rem;
-//     line-height: 1.8;
-//     color: #555;
-//   }
-
-//   &__recommend li {
-//     list-style-type: none;
-//   }
-// }
 
 .p-sidebar {
   ul {
@@ -197,4 +254,70 @@ $mq-breakpoints: (
       height: 24px;
     }
   }
+}
+
+.p-single__headline {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #555;
+  padding-left: 20px;
+  border-left: solid 4px #355d9a;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.p-footer {
+  background-color: #355d9a;
+  width: 100%;
+  padding: 1rem;
+  bottom: 0;
+  font-weight: lighter;
+  color: white;
+
+  @include mq(md) {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @include mq(lg) {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  @include mq(xl) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-weight: lighter;
+  }
+  ul {
+    padding-left: 5px;
+    list-style: none;
+  }
+  p {
+    text-align: justify;
+    font-size: 12px;
+  }
+  iframe {
+    width: 100%;
+    position: relative;
+    height: 170px;
+  }
+}
+
+.sm {
+  list-style: none;
+  overflow: auto;
+  display: flex;
+}
+.sm li {
+  display: block;
+  padding: 5px;
+}
+.sm li a img {
+  width: 32px;
 }

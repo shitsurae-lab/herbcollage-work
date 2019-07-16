@@ -16,10 +16,6 @@ ol,
 dl {
   list-style-type: none; }
 
-p {
-  margin-top: 0;
-  margin-bottom: 0rem; }
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -96,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 abbr[title],
 abbr[data-original-title] {
@@ -11627,6 +11623,73 @@ figure.woocommerce-product-gallery__wrapper {
       max-width: 1140px;
       margin: 0 auto; } }
 
+.p-globalNav__menu {
+  width: 100%; }
+  @media screen and (min-width: 992px) {
+    .p-globalNav__menu {
+      width: 60%; } }
+
+.p-globalNav__list {
+  width: 100%;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (min-width: 992px) {
+    .p-globalNav__list {
+      width: 33.333%;
+      height: 80px;
+      padding-left: 16px;
+      padding-right: 16px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      border-left: dashed 1px rgba(255, 255, 255, 0.6); }
+      .p-globalNav__list:last-child {
+        border-right: dashed 1px rgba(255, 255, 255, 0.6); }
+      .home .p-globalNav__list a {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        text-align: center;
+        line-height: 80px; }
+        .home .p-globalNav__list a::before {
+          position: absolute;
+          top: -4px;
+          left: 50%;
+          width: 36px;
+          height: 36px;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          content: "";
+          background-image: url("http://mimi.info/wp-content/uploads/2019/07/chicken.png");
+          background-repeat: no-repeat; }
+      .cafe .p-globalNav__list a {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        text-align: center;
+        line-height: 80px; }
+        .cafe .p-globalNav__list a::before {
+          position: absolute;
+          top: -4px;
+          left: 50%;
+          width: 36px;
+          height: 36px;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          content: "";
+          background-image: url("http://mimi.info/wp-content/uploads/2019/07/cafe.png");
+          background-repeat: no-repeat; } }
+
 .p-cover h2,
 .p-news h2 {
   font-weight: 400;
@@ -11749,6 +11812,16 @@ figure.woocommerce-product-gallery__wrapper {
   opacity: 0.6;
   padding: 28px 20px; }
 
+.p-recommend__image {
+  margin-bottom: 16px; }
+
+.p-recommend h3 {
+  font-family: "Source Han Code JP";
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  color: #39a9db; }
+
 .p-sidebar ul {
   margin-left: 20px; }
 
@@ -11788,6 +11861,63 @@ figure.woocommerce-product-gallery__wrapper {
     content: url("http://mimi.info/wp-content/uploads/2019/07/arrow-blue.png");
     width: 24px;
     height: 24px; }
+
+.p-single__headline {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #555;
+  padding-left: 20px;
+  border-left: solid 4px #355d9a;
+  background-repeat: no-repeat;
+  margin-bottom: 20px; }
+
+.p-footer {
+  background-color: #355d9a;
+  width: 100%;
+  padding: 1rem;
+  bottom: 0;
+  font-weight: lighter;
+  color: white; }
+  @media screen and (min-width: 768px) {
+    .p-footer {
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 992px) {
+    .p-footer {
+      max-width: 992px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1200px) {
+    .p-footer {
+      max-width: 1140px;
+      margin: 0 auto; } }
+  .p-footer h3 {
+    font-weight: lighter; }
+  .p-footer ul {
+    padding-left: 5px;
+    list-style: none; }
+  .p-footer p {
+    text-align: justify;
+    font-size: 12px; }
+  .p-footer iframe {
+    width: 100%;
+    position: relative;
+    height: 170px; }
+
+.sm {
+  list-style: none;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sm li {
+  display: block;
+  padding: 5px; }
+
+.sm li a img {
+  width: 32px; }
 
 /*
 * Use existing Bootstrap 4 classes and

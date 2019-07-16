@@ -42,8 +42,5 @@ dl {
 }
 
 //RESET: reboot.scss
-
-p {
-  margin-top: 0;
-  margin-bottom: 0rem;
-}
+// src/sass/bootstrap4/_variable.scss
+$paragraph-margin-bottom: 0;
