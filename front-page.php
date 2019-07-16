@@ -175,20 +175,36 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="container p-recommend__content">
 						<div class="row">
 							<div class="col-md-6">
-								<img src="<?php $upload_dir = wp_upload_dir();
-													echo $upload_dir['baseurl']; ?>/2019/07/image330x240.jpg" alt="">
+								<div class="p-recommend__image">
+									<img src="<?php $upload_dir = wp_upload_dir();
+														echo $upload_dir['baseurl']; ?>/2019/07/hikawamaru.jpg" alt="">
+								</div>
+								<h3>山下公園近くのイベント</h3>
+							</div>
+							<!-- END col-md-6 -->
+							<div class="col-md-6">
+								<div class="p-recommend__image">
+									<img src="<?php $upload_dir = wp_upload_dir();
+														echo $upload_dir['baseurl']; ?>/2019/07/yokohama_sankeien.jpg" alt="">
+								</div>
+								<!-- END .p-recommend__image -->
+								<h3>意外!?自然豊かなヨコハマ</h3>
 							</div>
 							<div class="col-md-6">
-								<img src="<?php $upload_dir = wp_upload_dir();
-													echo $upload_dir['baseurl']; ?>/2019/07/image330x240.jpg" alt="">
+								<div class="p-recommend__image">
+									<img src="<?php $upload_dir = wp_upload_dir();
+														echo $upload_dir['baseurl']; ?>/2019/07/hardrock_cafe.jpg" alt="">
+								</div>
+								<!-- END .p-recommend__image -->
+								<h3>みなとみらいのオイシイを特集</h3>
 							</div>
 							<div class="col-md-6">
-								<img src="<?php $upload_dir = wp_upload_dir();
-													echo $upload_dir['baseurl']; ?>/2019/07/image330x240.jpg" alt="">
-							</div>
-							<div class="col-md-6">
-								<img src="<?php $upload_dir = wp_upload_dir();
-													echo $upload_dir['baseurl']; ?>/2019/07/image330x240.jpg" alt="">
+								<div class="p-recommend__image">
+									<img src="<?php $upload_dir = wp_upload_dir();
+														echo $upload_dir['baseurl']; ?>/2019/07/yokohama_night.jpg" alt="">
+								</div>
+								<!-- END .p-recommend__image -->
+								<h3>ステキがいっぱい!ヨコハマ夜景</h3>
 							</div>
 						</div>
 						<!-- END row -->
