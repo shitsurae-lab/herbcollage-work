@@ -35,9 +35,11 @@ function theme_enqueue_styles()
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get('Version'), true);
+    wp_enqueue_script('popper.min.js', get_stylesheet_directory_uri() . './js/popper.min.js', array(), '', true);
 
     wp_enqueue_script('swiper', get_stylesheet_directory_uri() . '/js/swiper.js', array(), '4.5.0', true);
     wp_enqueue_script('swiper-mount', get_stylesheet_directory_uri() . '/js/swiper-mount.js', array(), '', true);
+
 
 
 
@@ -46,11 +48,12 @@ function theme_enqueue_styles()
     }
 }
 
+
 function yomogi_setup()
 {
     register_nav_menus(array(
-        'global' => 'Global Navigation',
-        'footer' => 'Footer Navigation'
+        'global' => 'グローバル',
+        'footer' => 'フッター'
 
     ));
 }
