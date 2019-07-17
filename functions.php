@@ -51,7 +51,7 @@ function yomogi_setup_theme()
 
 
 register_nav_menus(array(
-    'global' => 'グローバル',
+    'primary' => 'プライマリー',
     'footer' => 'フッター'
 
 ));
@@ -70,6 +70,22 @@ function swiper_script()
     wp_enqueue_script('swiper-mount', get_stylesheet_directory_uri() . '/js/swiper-mount.js', array(), '', true);
 }
 add_action('wp_enqueue_scripts', 'swiper_script');
+
+
+// BootstrapのCSS
+// function bootstrap_style()
+// {
+//     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css', array(), false, 'all');
+// }
+// add_action('wp_enqueue_scripts', 'bootstrap_style');
+
+// BootstrapのJavaScript
+// function bootstrap_script()
+// {
+//     wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/js/bootstrap.js', array(), '4.3.1', true);
+
+// }
+// add_action('wp_enqueue_scripts', 'bootstrap_script');
 
 function add_jquery_files()
 {
