@@ -22,54 +22,56 @@ $sidebar_pos = get_theme_mod('understrap_sidebar_position');
 	<?php else : ?>
 		<div class="col-md-4 widget-area p-sidebar" id="right-sidebar" role="complementary">
 			<!-- おおよそ横幅に118%〜120%, 縦幅に125% -->
-		<?php endif; ?>
-		<ul>
-			<li><img src="https://placehold.jp/350x190.png
-" alt=""></li>
-			<li> <img src="http://placehold.jp/24/434A52
-/ffffff/350x85.png?text=Banner01"></li>
-			<li>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia nulla purus. Integer imperdiet, sem vel pulvinar vehicula, nisl nunc elementum tortor, eu dignissim dui nibh ut massa. Nulla efficitur est purus, sed semper risus euismod eu. Nunc condimentum dui nec orci ornare, at rhoncus enim mollis. Nullam convallis libero quis tempor cursus. Donec laoreet egestas urna id volutpat. Nullam sit amet gravida eros, et imperdi</p>
-			</li>
-			<li class="d-flex p-sidebar__list">
-				<div class="p-sidebar__list--text">
-					<p>malesuada fames</p>
-				</div>
-				<div class="p-sidebar__list--image">
-					<img src="<?php $upload_dir = wp_upload_dir();
-										echo $upload_dir['baseurl']; ?>/2019/07/mail_circle.png" alt="">
-				</div>
-			</li>
-			<li class="d-flex p-sidebar__list">
-				<div class="p-sidebar__list--text">
-					<p>malesuada fames.</p>
-				</div>
-				<div class="p-sidebar__list--image">
-					<img src="<?php $upload_dir = wp_upload_dir();
-										echo $upload_dir['baseurl']; ?>/2019/07/info_circle.png" alt="">
-				</div>
-			</li>
-			<li class="d-flex p-sidebar__list">
-				<div class="p-sidebar__list--text">
-					<p>malesuada fames.</p>
-				</div>
-				<div class="p-sidebar__list--image">
-					<img src="<?php $upload_dir = wp_upload_dir();
-										echo $upload_dir['baseurl']; ?>/2019/07/light_meal.png" alt="">
-				</div>
-			</li>
-			<li class="d-flex p-sidebar__list">
-				<div class="p-sidebar__list--text">
-					<p>malesuada fames.</p>
-				</div>
-				<div class="p-sidebar__list--image">
-					<img src="<?php $upload_dir = wp_upload_dir();
-										echo $upload_dir['baseurl']; ?>/2019/07/chat_dazzle.png" alt="">
-				</div>
-			</li>
-		</ul>
+			<div class="container">
+				<div class="row">
 
 
-		<?php dynamic_sidebar('right-sidebar'); ?>
+					<ul class="col-12 px-0">
+						<?php dynamic_sidebar('right-sidebar'); ?>
+					<?php endif; ?>
+					<div class="p-video embed-responsive embed-responsive-16by9">
+						<video src="<?php $upload_dir = wp_upload_dir();
+												echo $upload_dir['baseurl']; ?>/2019/07/starry-sky.m4v" poster="<?php $upload_dir = wp_upload_dir();
+																																												echo $upload_dir['baseurl']; ?>/2019/07/starry-sky_image.jpg" muted controls class="p-video__inner embed-responsive-item" allowfullscreen></video>
+					</div>
+					<li class="d-flex p-sidebar__list">
+						<div class="p-sidebar__list--text">
+							<p>malesuada fames</p>
+						</div>
+						<div class="p-sidebar__list--image">
+							<img src="<?php $upload_dir = wp_upload_dir();
+												echo $upload_dir['baseurl']; ?>/2019/07/mail_circle.png" alt="">
+						</div>
+					</li>
+					<li class="d-flex p-sidebar__list">
+						<div class="p-sidebar__list--text">
+							<p>malesuada fames.</p>
+						</div>
+						<div class="p-sidebar__list--image">
+							<img src="<?php $upload_dir = wp_upload_dir();
+												echo $upload_dir['baseurl']; ?>/2019/07/info_circle.png" alt="">
+						</div>
+					</li>
+					<li class="d-flex p-sidebar__list">
+						<div class="p-sidebar__list--text">
+							<p>malesuada fames.</p>
+						</div>
+						<div class="p-sidebar__list--image">
+							<img src="<?php $upload_dir = wp_upload_dir();
+												echo $upload_dir['baseurl']; ?>/2019/07/light_meal.png" alt="">
+						</div>
+					</li>
+					<li class="d-flex p-sidebar__list">
+						<div class="p-sidebar__list--text">
+							<p>malesuada fames.</p>
+						</div>
+						<div class="p-sidebar__list--image">
+							<img src="<?php $upload_dir = wp_upload_dir();
+												echo $upload_dir['baseurl']; ?>/2019/07/chat_dazzle.png" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 	</div><!-- #right-sidebar -->

@@ -22,9 +22,9 @@ $mq-breakpoints: (
   background: linear-gradient($angle, $color, adjust-hue($color, $amount)) fixed;
 }
 
-// Header --header.php
+// navbar --header.php
 
-.p-headerContent {
+.p-navbarContent {
   width: 100%;
 
   @include mq(md) {
@@ -79,17 +79,17 @@ $mq-breakpoints: (
         position: relative;
         text-align: center;
         line-height: 80px;
-        &::before {
-          position: absolute;
-          top: -4px;
-          left: 50%;
-          width: 36px;
-          height: 36px;
-          transform: translateX(-50%);
-          content: "";
-          background-image: url("http://mimi.info/wp-content/uploads/2019/07/chicken.png");
-          background-repeat: no-repeat;
-        }
+        // &::before {
+        //   position: absolute;
+        //   top: -4px;
+        //   left: 50%;
+        //   width: 36px;
+        //   height: 36px;
+        //   transform: translateX(-50%);
+        //   content: "";
+        //   background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/chicken.png");
+        //   background-repeat: no-repeat;
+        // }
       }
       .cafe & a {
         width: 100%;
@@ -105,7 +105,7 @@ $mq-breakpoints: (
           height: 36px;
           transform: translateX(-50%);
           content: "";
-          background-image: url("http://mimi.info/wp-content/uploads/2019/07/cafe.png");
+          background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/cafe.png");
           background-repeat: no-repeat;
         }
       }
@@ -220,7 +220,6 @@ $mq-breakpoints: (
 
 .p-sidebar {
   ul {
-    margin-left: 20px;
   }
   &__list {
     width: 100%;
@@ -249,10 +248,17 @@ $mq-breakpoints: (
       left: 12px;
       top: 50%;
       transform: translateY(-50%);
-      content: url("http://mimi.info/wp-content/uploads/2019/07/arrow-blue.png");
+      content: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/arrow-blue.png");
       width: 24px;
       height: 24px;
     }
+  }
+}
+
+.p-video {
+  &__inner {
+    width: 330px;
+    height: 220px;
   }
 }
 

@@ -11607,19 +11607,19 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
-.p-headerContent {
+.p-navbarContent {
   width: 100%; }
   @media screen and (min-width: 768px) {
-    .p-headerContent {
+    .p-navbarContent {
       width: 100%;
       max-width: 768px;
       margin: 0 auto; } }
   @media screen and (min-width: 992px) {
-    .p-headerContent {
+    .p-navbarContent {
       max-width: 992px;
       margin: 0 auto; } }
   @media screen and (min-width: 1200px) {
-    .p-headerContent {
+    .p-navbarContent {
       max-width: 1140px;
       margin: 0 auto; } }
 
@@ -11661,17 +11661,6 @@ figure.woocommerce-product-gallery__wrapper {
         position: relative;
         text-align: center;
         line-height: 80px; }
-        .home .p-globalNav__list a::before {
-          position: absolute;
-          top: -4px;
-          left: 50%;
-          width: 36px;
-          height: 36px;
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%);
-          content: "";
-          background-image: url("http://mimi.info/wp-content/uploads/2019/07/chicken.png");
-          background-repeat: no-repeat; }
       .cafe .p-globalNav__list a {
         width: 100%;
         height: 80px;
@@ -11687,7 +11676,7 @@ figure.woocommerce-product-gallery__wrapper {
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%);
           content: "";
-          background-image: url("http://mimi.info/wp-content/uploads/2019/07/cafe.png");
+          background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/cafe.png");
           background-repeat: no-repeat; } }
 
 .p-cover h2,
@@ -11822,9 +11811,6 @@ figure.woocommerce-product-gallery__wrapper {
   text-align: left;
   color: #39a9db; }
 
-.p-sidebar ul {
-  margin-left: 20px; }
-
 .p-sidebar__list {
   width: 100%;
   height: 90px;
@@ -11858,9 +11844,13 @@ figure.woocommerce-product-gallery__wrapper {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    content: url("http://mimi.info/wp-content/uploads/2019/07/arrow-blue.png");
+    content: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/arrow-blue.png");
     width: 24px;
     height: 24px; }
+
+.p-video__inner {
+  width: 330px;
+  height: 220px; }
 
 .p-single__headline {
   font-weight: 400;

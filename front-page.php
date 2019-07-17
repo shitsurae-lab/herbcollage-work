@@ -94,11 +94,11 @@ $container = get_theme_mod('understrap_container_type');
 					<h2 class="p-cover__headline">大好きな横浜のスポットをご紹介します。</h2>
 					<div class="container p-cover__content">
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-lg-6">
 								<img src="<?php $upload_dir = wp_upload_dir();
 													echo $upload_dir['baseurl']; ?>/2019/07/thumbnail01.jpg" alt="">
 							</div>
-							<div class="col-md-6">
+							<div class="col-lg-6">
 								<h3 class="dropCap">横浜って広い…広すぎ…</h3>
 								<ul class="p-cover__recommend">
 									<li>みなとみらい地区</li>
@@ -117,8 +117,8 @@ $container = get_theme_mod('understrap_container_type');
 					<h2 class="p-news__headline">お知らせ</h2>
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex flex-column flex-lg-row">
+							<div class="col-lg-6 p-1">
+								<div class="p-news__list d-flex flex-column flex-md-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/event.jpg" alt="">
@@ -129,8 +129,8 @@ $container = get_theme_mod('understrap_container_type');
 								</div>
 							</div>
 							<!-- END col-md-6 -->
-							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex flex-column flex-lg-row">
+							<div class="col-lg-6 p-1">
+								<div class="p-news__list d-flex flex-column flex-md-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/gourmet.jpg" alt="">
@@ -141,8 +141,8 @@ $container = get_theme_mod('understrap_container_type');
 								</div>
 							</div>
 							<!-- END col-md-6 -->
-							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex flex-column flex-lg-row">
+							<div class="col-lg-6 p-1">
+								<div class="p-news__list d-flex flex-column flex-md-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/shopping.jpg" alt="">
@@ -153,8 +153,8 @@ $container = get_theme_mod('understrap_container_type');
 								</div>
 							</div>
 							<!-- END col-md-6 -->
-							<div class="col-md-6 p-1">
-								<div class="p-news__list d-flex flex-column flex-lg-row">
+							<div class="col-lg-6 p-1">
+								<div class="p-news__list d-flex flex-column flex-md-row">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/sightseeing.jpg" alt="">

@@ -15,7 +15,7 @@ defined('ABSPATH') || exit;
 
   <div class="container p-single__content">
     <div class="row">
-      <div class="col-10">
+      <div class="col-12 col-md-10">
         <header class="entry-header">
 
           <?php the_title('<h1 class="entry-title p-single__headline">', '</h1>'); ?>

@@ -16,51 +16,18 @@ function understrap_remove_scripts()
 add_action('wp_enqueue_scripts', 'understrap_remove_scripts', 20);
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
-
 function theme_enqueue_styles()
 {
 
     // Get the theme data
     $the_theme = wp_get_theme();
     wp_enqueue_style('child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get('Version'));
-
-    wp_enqueue_style('swiper', get_stylesheet_directory_uri() . '/css/swiper.css', array(), '');
-
-    wp_enqueue_style(
-        'ress',
-        get_stylesheet_directory_uri() . '/css/ress.min.css',
-        array(),
-        ''
-    );
-
     wp_enqueue_script('jquery');
     wp_enqueue_script('child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get('Version'), true);
-    wp_enqueue_script('popper.min.js', get_stylesheet_directory_uri() . './js/popper.min.js', array(), '', true);
-
-    wp_enqueue_script('swiper', get_stylesheet_directory_uri() . '/js/swiper.js', array(), '4.5.0', true);
-    wp_enqueue_script('swiper-mount', get_stylesheet_directory_uri() . '/js/swiper-mount.js', array(), '', true);
-
-
-
-
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
 }
-
-
-function yomogi_setup()
-{
-    register_nav_menus(array(
-        'global' => 'グローバル',
-        'footer' => 'フッター'
-
-    ));
-}
-
-
-
-
 
 function add_child_theme_textdomain()
 {
@@ -81,3 +48,45 @@ function yomogi_setup_theme()
     ));
 }
 // add_action('after_setup_theme', 'yomogi_setup_theme');
+
+
+register_nav_menus(array(
+    'global' => 'グローバル',
+    'footer' => 'フッター'
+
+));
+
+// SwiperのCSS
+function swiper_style()
+{
+    wp_enqueue_style('swiper', get_stylesheet_directory_uri() . '/css/swiper.css', array(), false, 'all');
+}
+add_action('wp_enqueue_scripts', 'swiper_style');
+
+// SwiperのJavaScript
+function swiper_script()
+{
+    wp_enqueue_script('swiper', get_stylesheet_directory_uri() . '/js/swiper.js', array(), '4.5.0', true);
+    wp_enqueue_script('swiper-mount', get_stylesheet_directory_uri() . '/js/swiper-mount.js', array(), '', true);
+}
+add_action('wp_enqueue_scripts', 'swiper_script');
+
+function add_jquery_files()
+{
+    $the_theme = wp_get_theme();
+    // WordPress本体のjquery.jsを読み込まない
+    wp_deregister_script('jquery');
+    // jQueryをキューにセット
+    wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+    // jQueryの読み込み
+    wp_enqueue_script('jquery');
+    // wp_enqueue_script(
+    //     'popper',
+    //     get_stylesheet_directory_uri() . '/js/popper.min.js',
+    //     array(),
+    //     '',
+    //     false
+    // );
+    wp_enqueue_script('child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get('Version'), true);
+}
+add_action('wp_enqueue_scripts', 'add_jquery_files');

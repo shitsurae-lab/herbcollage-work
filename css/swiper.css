@@ -311,14 +311,14 @@
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("http://mimi.local/wp-content/uploads/2019/07/left-arrow.png");
+  background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/left-arrow.png");
   left: 10px;
   right: auto;
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("http://mimi.local/wp-content/uploads/2019/07/right-arrow.png");
+  background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/right-arrow.png");
   right: 10px;
   left: auto;
 }
