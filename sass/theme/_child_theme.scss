@@ -73,7 +73,7 @@ $mq-breakpoints: (
       &:last-child {
         border-right: dashed 1px rgba(255, 255, 255, 0.6);
       }
-      .home & a {
+      & .home a {
         width: 100%;
         height: 80px;
         position: relative;
@@ -91,7 +91,7 @@ $mq-breakpoints: (
         //   background-repeat: no-repeat;
         // }
       }
-      .cafe & a {
+      & .cafe a {
         width: 100%;
         height: 80px;
         position: relative;
@@ -181,12 +181,6 @@ $mq-breakpoints: (
     display: flex;
     justify-content: start;
     align-items: center;
-    @include mq(lg) {
-      width: 55%;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-    }
   }
 }
 
