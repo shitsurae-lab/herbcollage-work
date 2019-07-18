@@ -91,7 +91,7 @@ $container = get_theme_mod('understrap_container_type');
 			<main class="site-main" id="main">
 
 				<section class="p-cover pb-4">
-					<h2 class="p-cover__headline">大好きな横浜のスポットをご紹介します。</h2>
+					<h2 class="p-cover__headline">オススメスポット</h2>
 					<div class="container p-cover__content">
 						<div class="row">
 							<div class="col-lg-6">
@@ -118,49 +118,49 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 p-1">
-								<div class="p-news__list d-flex flex-row flex-lg-column">
+								<div class="p-news__list d-flex">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/event.jpg" alt="">
 									</div>
 									<div class="p-news__letter">
-										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. Nam elementum et ante vitae ullamcorper. </p>
+										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
 									</div>
 								</div>
 							</div>
 							<!-- END col-md-6 -->
 							<div class="col-lg-6 p-1">
-								<div class="p-news__list d-flex flex-row flex-lg-column">
+								<div class="p-news__list d-flex">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/gourmet.jpg" alt="">
 									</div>
 									<div class="p-news__letter">
-										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. Nam elementum et ante vitae ullamcorper. </p>
+										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
 									</div>
 								</div>
 							</div>
 							<!-- END col-md-6 -->
 							<div class="col-lg-6 p-1">
-								<div class="p-news__list d-flex flex-row flex-lg-column">
+								<div class="p-news__list d-flex">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/shopping.jpg" alt="">
 									</div>
 									<div class="p-news__letter">
-										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. Nam elementum et ante vitae ullamcorper. </p>
+										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
 									</div>
 								</div>
 							</div>
 							<!-- END col-md-6 -->
 							<div class="col-lg-6 p-1">
-								<div class="p-news__list d-flex flex-row flex-lg-column">
+								<div class="p-news__list d-flex">
 									<div class="p-news__image">
 										<img src="<?php $upload_dir = wp_upload_dir();
 															echo $upload_dir['baseurl']; ?>/2019/07/sightseeing.jpg" alt="">
 									</div>
 									<div class="p-news__letter">
-										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. Nam elementum et ante vitae ullamcorper. </p>
+										<p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
 									</div>
 								</div>
 							</div>

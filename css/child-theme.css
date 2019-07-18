@@ -11744,7 +11744,7 @@ figure.woocommerce-product-gallery__wrapper {
 
 .p-cover__image,
 .p-news__image {
-  width: 100%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11757,7 +11757,7 @@ figure.woocommerce-product-gallery__wrapper {
   @media screen and (min-width: 768px) {
     .p-cover__image,
     .p-news__image {
-      width: 100%;
+      width: 45%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -11784,16 +11784,17 @@ figure.woocommerce-product-gallery__wrapper {
 
 .p-cover__letter,
 .p-news__letter {
-  width: 100%;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-left: 15px; }
 
 .p-recommend__headline {
   font-weight: 400;
