@@ -71,6 +71,13 @@ function swiper_script()
 }
 add_action('wp_enqueue_scripts', 'swiper_script');
 
+// ress.CSS
+function ress_style()
+{
+    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/ress.min.css', array(), false, 'all');
+}
+add_action('wp_enqueue_scripts', 'ress_style');
+
 
 // BootstrapのCSS
 // function bootstrap_style()
