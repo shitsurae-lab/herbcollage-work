@@ -31,6 +31,7 @@ $mq-breakpoints: (
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
+    padding: 1rem 0;
   }
 
   @include mq(lg) {
@@ -49,25 +50,23 @@ $mq-breakpoints: (
 .p-globalNav {
   &__menu {
     width: 100%;
-    @include mq(lg) {
+    @include mq(md) {
       width: 60%;
     }
   }
   &__list {
     width: 100%;
-    height: 40px;
+    height: 64px;
     padding-left: 16px;
     padding-right: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 
-    @include mq(lg) {
+    @include mq(md) {
       width: 33.333%;
-      height: 80px;
-      padding-left: 16px;
-      padding-right: 16px;
-      align-items: flex-end;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-left: dashed 1px rgba(255, 255, 255, 0.6);
 
       &:last-child {
@@ -87,7 +86,7 @@ $mq-breakpoints: (
         //   height: 36px;
         //   transform: translateX(-50%);
         //   content: "";
-        //   background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/chicken.png");
+        //   background-image: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/chicken.png");
         //   background-repeat: no-repeat;
         // }
       }
@@ -105,7 +104,7 @@ $mq-breakpoints: (
           height: 36px;
           transform: translateX(-50%);
           content: "";
-          background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/cafe.png");
+          background-image: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/cafe.png");
           background-repeat: no-repeat;
         }
       }
@@ -241,7 +240,7 @@ $mq-breakpoints: (
       left: 12px;
       top: 50%;
       transform: translateY(-50%);
-      content: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/arrow-blue.png");
+      content: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/arrow-blue.png");
       width: 24px;
       height: 24px;
     }

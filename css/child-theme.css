@@ -4534,7 +4534,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -11635,7 +11635,8 @@ figure.woocommerce-product-gallery__wrapper {
     .p-navbarContent {
       width: 100%;
       max-width: 768px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding: 1rem 0; } }
   @media screen and (min-width: 992px) {
     .p-navbarContent {
       max-width: 992px;
@@ -11647,33 +11648,29 @@ figure.woocommerce-product-gallery__wrapper {
 
 .p-globalNav__menu {
   width: 100%; }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     .p-globalNav__menu {
       width: 60%; } }
 
 .p-globalNav__list {
   width: 100%;
-  height: 40px;
+  height: 64px;
   padding-left: 16px;
   padding-right: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media screen and (min-width: 992px) {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
     .p-globalNav__list {
       width: 33.333%;
-      height: 80px;
-      padding-left: 16px;
-      padding-right: 16px;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
+      height: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       border-left: dashed 1px rgba(255, 255, 255, 0.6); }
       .p-globalNav__list:last-child {
         border-right: dashed 1px rgba(255, 255, 255, 0.6); }
@@ -11698,7 +11695,7 @@ figure.woocommerce-product-gallery__wrapper {
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%);
           content: "";
-          background-image: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/cafe.png");
+          background-image: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/cafe.png");
           background-repeat: no-repeat; } }
 
 .p-cover h2,
@@ -11854,7 +11851,7 @@ figure.woocommerce-product-gallery__wrapper {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    content: url("http://herbcollage.work/juice/wp-content/uploads/2019/07/arrow-blue.png");
+    content: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/arrow-blue.png");
     width: 24px;
     height: 24px; }
 
