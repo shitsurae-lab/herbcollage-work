@@ -213,13 +213,71 @@ $container = get_theme_mod('understrap_container_type');
 				</section>
 				<?php while (have_posts()) : the_post(); ?>
 					<div class="entry-header">
-						<?php
-						the_title(
-							sprintf('<h2 class="entry-title p-news__headline"><a href="%s" rel="bookmark">', esc_url(get_permalink())),
-							'</a></h2>'
-						);
-						?>
 					</div>
+					<!-- END .entry-header -->
+
+					<?php
+					the_title(
+						sprintf('<h2 class="entry-title p-news__headline"><a href="%s" rel="bookmark">', esc_url(get_permalink())),
+						'</a></h2>'
+					);
+					?>
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<div class="container">
+							<div class="blog-inner row">
+
+
+								<?php
+								global $post;
+								$args = array('posts_per_page' => 6);
+								$myposts = get_posts($args);
+								foreach ($myposts as $post) {
+									setup_postdata($post);
+									?>
+									<div class="blog-card col-md-4">
+										<figure>
+											<p class="photoThumb">
+												<a href="<?php the_permalink() ?>">
+													<?php if (has_post_thumbnail()) : ?>
+														<a href="<?php the_permalink(); ?>">
+															<?php the_post_thumbnail('add_medium'); ?>
+															<?php //the_post_thumbnail('index_thumbnail');
+															?>
+														</a>
+													<?php else : ?>
+														<a href="<?php the_permalink(); ?>"><img src="/dist/images/noimage.gif" alt="no image"></a>
+													<?php endif; ?>
+												</a>
+											</p>
+											<figcaption>
+												<dl>
+													<dt><?php the_time('Y.m.d') ?> <span class="blog-cat"><?php the_category('｜') ?></span> </dt>
+													<dd>
+														<a href="<?php the_permalink() ?>">
+															<?php the_title(); ?>
+														</a>
+													</dd>
+												</dl>
+											</figcaption>
+										</figure>
+									</div>
+								<?php
+								}
+								wp_reset_postdata();
+								?>
+							</div>
+							<!-- END row -->
+						</div>
+						<!-- END .container -->
+					</div><!-- .entry-content -->
+
+					<footer class="entry-footer">
+
+						<?php edit_post_link(__('Edit', 'understrap'), '<span class="edit-link">', '</span>'); ?>
+
+					</footer><!-- .entry-footer -->
+
 
 					<?php get_template_part('loop-templates/content-header', 'page'); ?>
 
