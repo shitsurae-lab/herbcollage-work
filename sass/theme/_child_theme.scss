@@ -1,12 +1,10 @@
 // Definition
 
-$mq-breakpoints: (
-  "xs": 320px,
+$mq-breakpoints: ("xs": 320px,
   "sm": 576px,
   "md": 768px,
   "lg": 992px,
-  "xl": 1200px
-);
+  "xl": 1200px);
 
 @mixin mq($breakpoint: medium) {
   @media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
@@ -14,11 +12,9 @@ $mq-breakpoints: (
   }
 }
 
-@mixin bg-gradient(
-  $angle: 180deg,
+@mixin bg-gradient($angle: 180deg,
   $color: rgba(217, 229, 214, 0.8),
-  $amount: 20%
-) {
+  $amount: 20%) {
   background: linear-gradient($angle, $color, adjust-hue($color, $amount)) fixed;
 }
 
@@ -50,16 +46,21 @@ $mq-breakpoints: (
 .p-globalNav {
   &__menu {
     width: 100%;
+
     @include mq(md) {
       width: 60%;
     }
   }
+
   &__list {
     width: 100%;
     height: 64px;
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include mq(md) {
       width: 33.333%;
@@ -72,45 +73,13 @@ $mq-breakpoints: (
       &:last-child {
         border-right: dashed 1px rgba(255, 255, 255, 0.6);
       }
-      & .home a {
-        width: 100%;
-        height: 80px;
-        position: relative;
-        text-align: center;
-        line-height: 80px;
-        // &::before {
-        //   position: absolute;
-        //   top: -4px;
-        //   left: 50%;
-        //   width: 36px;
-        //   height: 36px;
-        //   transform: translateX(-50%);
-        //   content: "";
-        //   background-image: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/chicken.png");
-        //   background-repeat: no-repeat;
-        // }
-      }
-      & .cafe a {
-        width: 100%;
-        height: 80px;
-        position: relative;
-        text-align: center;
-        line-height: 80px;
-        &::before {
-          position: absolute;
-          top: -4px;
-          left: 50%;
-          width: 36px;
-          height: 36px;
-          transform: translateX(-50%);
-          content: "";
-          background-image: url("http://herbcollage.work/cake/wp-content/uploads/2019/07/cafe.png");
-          background-repeat: no-repeat;
-        }
-      }
+
     }
+
   }
 }
+
+
 
 // Home --front-page
 
@@ -122,7 +91,7 @@ $mq-breakpoints: (
     line-height: 2.5;
     color: #555;
     padding-left: 20px;
-    border-left: solid 4px #355d9a;
+    border-left: solid 4px #434A52;
     background-repeat: no-repeat;
     margin-bottom: 20px;
   }
@@ -140,7 +109,7 @@ $mq-breakpoints: (
     line-height: 2.5;
     color: #555;
     padding-left: 20px;
-    border-left: solid 4px #355d9a;
+    border-left: solid 4px #434A52;
     background-repeat: no-repeat;
     margin-bottom: 20px;
   }
@@ -150,33 +119,37 @@ $mq-breakpoints: (
   }
 
   &__list {
-    border: solid 1px #a7bed3;
+    border: solid 3px #434A52;
     border-radius: 4px;
     padding: 12px;
     width: 92%;
     margin: 0 auto;
   }
+
   &__image {
-    width: 45%;
+    width: 32%;
     display: flex;
     justify-content: center;
     align-items: center;
+
     @include mq(md) {
-      width: 45%;
+      width: 32%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 8px;
     }
+
     @include mq(lg) {
-      width: 45%;
+      width: 32%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
+
   &__letter {
-    width: 55%;
+    width: 64%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,26 +164,35 @@ $mq-breakpoints: (
     line-height: 2.5;
     color: #555;
     padding-left: 20px;
-    border-left: solid 4px #355d9a;
+    border-left: solid 4px #434A52;
     background-repeat: no-repeat;
     margin-bottom: 20px;
   }
+
   &__content {
     background: #dedede;
-    opacity: 0.6;
-    padding: 28px 20px;
+    padding: 48px 24px;
   }
+
+  &__inner {
+    margin-bottom: 24px;
+  }
+
+
   &__image {
     margin-bottom: 16px;
   }
+
   h3 {
     font-family: "Source Han Code JP";
     font-weight: normal;
     font-size: 18px;
     text-align: left;
-    color: #39a9db;
+    color: #434A52;
   }
+
 }
+
 
 .p-sidebar {
   &__list {
@@ -218,23 +200,27 @@ $mq-breakpoints: (
     height: 90px;
     padding: 12px 8px 12px 40px;
     background: #fff;
-    border: 2px solid #355d9a;
+    border: 2px solid #434A52;
     opacity: 0.85;
     position: relative;
     margin-bottom: 10px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     &--text {
-      width: 65%;
+      width: 74%;
       display: flex;
       align-items: center;
     }
+
     &--image {
-      width: 25%;
+      width: 24%;
       display: flex;
       align-items: center;
     }
+
     &::before {
       position: absolute;
       left: 12px;
@@ -245,14 +231,19 @@ $mq-breakpoints: (
       height: 24px;
     }
   }
+
 }
 
 .p-video {
+  margin-bottom: 10px;
+
   &__inner {
     width: 330px;
     height: 220px;
   }
 }
+
+
 
 .p-single__headline {
   font-weight: 400;
@@ -260,13 +251,13 @@ $mq-breakpoints: (
   line-height: 2.5;
   color: #555;
   padding-left: 20px;
-  border-left: solid 4px #355d9a;
+  border-left: solid 4px #434A52;
   background-repeat: no-repeat;
   margin-bottom: 20px;
 }
 
 .p-footer {
-  background-color: #355d9a;
+  background-color: #434A52;
   width: 100%;
   padding: 1rem;
   bottom: 0;
@@ -292,14 +283,17 @@ $mq-breakpoints: (
   h3 {
     font-weight: lighter;
   }
+
   ul {
     padding-left: 5px;
     list-style: none;
   }
+
   p {
     text-align: justify;
     font-size: 12px;
   }
+
   iframe {
     width: 100%;
     position: relative;
@@ -312,10 +306,12 @@ $mq-breakpoints: (
   overflow: auto;
   display: flex;
 }
+
 .sm li {
   display: block;
   padding: 5px;
 }
+
 .sm li a img {
   width: 32px;
 }

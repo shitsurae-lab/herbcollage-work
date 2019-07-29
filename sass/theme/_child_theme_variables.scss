@@ -9,16 +9,14 @@
 // Color system
 //
 
-$primary: #355d9a;
+$primary: #434A52;
 $secondary: #002642;
 $gray-800: #555;
 
-$container-max-widths: (
-  sm: 540px,
+$container-max-widths: (sm: 540px,
   md: 720px,
   lg: 940px,
-  xl: 1140px
-);
+  xl: 1140px);
 
 // Limit featured image size to 100%
 article img,
@@ -46,3 +44,23 @@ dl {
 $paragraph-margin-bottom: 0;
 
 $navbar-padding-y: 0;
+
+$font-family-base: 'Avenir',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+'M PLUS Rounded 1c',
+'Hiragino Sans',
+'ヒラギノ角ゴシック',
+YuGothic,
+'Yu Gothic',
+'メイリオ',
+Meiryo,
+'ＭＳ Ｐゴシック',
+'MS PGothic',
+//END JP
+sans-serif;
+
+$headings-font-weight: 400;
+
+$font-weight-base: 300;
