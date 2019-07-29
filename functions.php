@@ -42,10 +42,15 @@ function yomogi_setup_theme()
     *
     */
     add_theme_support('custom-logo', array(
-        'height'      => 120,
+        'height'      => 80,
         'width'       => 160,
         'flex-height' => true,
     ));
+    /*
+    *Enable support for 'title-tag'.
+    */
+
+    add_theme_support('title-tag');
 }
 // add_action('after_setup_theme', 'yomogi_setup_theme');
 
@@ -77,6 +82,19 @@ function ress_style()
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/ress.min.css', array(), false, 'all');
 }
 add_action('wp_enqueue_scripts', 'ress_style');
+
+// M+PLUS+Rounded.CSS
+
+function wpb_add_google_fonts()
+{
+    wp_enqueue_style(
+        'm-plus-rounded',
+        'https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400&display=swap'
+    );
+}
+
+add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
+
 
 
 // BootstrapのCSS
