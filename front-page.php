@@ -80,132 +80,146 @@ $container = get_theme_mod('understrap_container_type');
       <?php get_template_part('global-templates/left-sidebar-check'); ?>
       <main class="site-main" id="main">
         <section class="p-cover pb-4">
-          <h2 class="p-cover__headline">オススメスポット</h2>
-          <div class="container p-cover__content">
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="<?php $upload_dir = wp_upload_dir();
-                          echo $upload_dir['baseurl']; ?>/2019/07/thumbnail01.jpg" alt="">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="dropCap">横浜って広い…広すぎ…</h3>
-                <ul class="p-cover__recommend">
-                  <li>みなとみらい地区</li>
-                  <li>元町・中華街</li>
-                  <li>馬車道・関内</li>
-                  <li>横浜駅周辺</li>
-                  <li>他にもある!魅力ある横浜!!</li>
-                </ul>
-                <p class="text-left"><a class="btn btn-primary text-light" href="#">こちらを御覧ください »</a></p>
-              </div>
-            </div>
-            <!-- END .row -->
-          </div>
-        </section>
-        <section class="p-news pb-4">
-          <h2 class="p-news__headline">お知らせ</h2>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 p-1">
-                <div class="p-news__list d-flex">
-                  <div class="p-news__image">
-                    <img src="<?php $upload_dir = wp_upload_dir();
-                              echo $upload_dir['baseurl']; ?>/2019/07/event.png" alt="">
-                  </div>
-                  <div class="p-news__letter">
-                    <p>これはサンプルです。これはサンプルです</p>
-                  </div>
-                </div>
-              </div>
-              <!-- END col-md-6 -->
-              <div class="col-lg-6 p-1">
-                <div class="p-news__list d-flex">
-                  <div class="p-news__image">
-                    <img src="<?php $upload_dir = wp_upload_dir();
-                              echo $upload_dir['baseurl']; ?>/2019/07/hamburger.png" alt="">
-                  </div>
-                  <div class="p-news__letter">
-                    <p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END col-md-6 -->
-              <div class="col-lg-6 p-1">
-                <div class="p-news__list d-flex">
-                  <div class="p-news__image">
-                    <img src="<?php $upload_dir = wp_upload_dir();
-                              echo $upload_dir['baseurl']; ?>/2019/07/shopping.jpg" alt="">
-                  </div>
-                  <div class="p-news__letter">
-                    <p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END col-md-6 -->
-              <div class="col-lg-6 p-1">
-                <div class="p-news__list d-flex">
-                  <div class="p-news__image">
-                    <img src="<?php $upload_dir = wp_upload_dir();
-                              echo $upload_dir['baseurl']; ?>/2019/07/sightseeing.jpg" alt="">
-                  </div>
-                  <div class="p-news__letter">
-                    <p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
-                  </div>
-                </div>
-              </div>
-              <!-- END col-md-6 -->
+              <h2 class="p-cover__headline">オススメスポット</h2>
             </div>
             <!-- END .row -->
           </div>
           <!-- END .container -->
+          <div class="container p-cover__content">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="<?php $upload_dir = wp_upload_dir();
+                            echo $upload_dir['baseurl']; ?>/2019/07/thumbnail01.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="dropCap">横浜って広い…広すぎ…</h3>
+                  <ul class="p-cover__recommend">
+                    <li>みなとみらい地区</li>
+                    <li>元町・中華街</li>
+                    <li>馬車道・関内</li>
+                    <li>横浜駅周辺</li>
+                    <li>他にもある!魅力ある横浜!!</li>
+                  </ul>
+                  <p class="text-left"><a class="btn btn-primary text-light" href="#">こちらを御覧ください »</a></p>
+                </div>
+              </div>
+              <!-- END .row -->
+            </div>
+        </section>
+        <section class="p-news pb-4">
+          <div class="container">
+            <div class="row">
+              <h2 class="p-news__headline">お知らせ</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 p-1">
+                <div class="p-news__list d-flex space-between">
+                  <div class="p-news__image">
+                    <img src="<?php $upload_dir = wp_upload_dir();
+                              echo $upload_dir['baseurl']; ?>/2019/07/event.png" alt="">
+                  </div>
+                    <div class="p-news__letter">
+                      <p>これはサンプルです。これはサンプルです</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- END col-md-6 -->
+                <div class="col-lg-6 p-1">
+                  <div class="p-news__list d-flex space-between">
+                    <div class="p-news__image">
+                      <img src="<?php $upload_dir = wp_upload_dir();
+                              echo $upload_dir['baseurl']; ?>/2019/07/hamburger.png" alt="">
+                  </div>
+                      <div class="p-news__letter">
+                        <p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END col-md-6 -->
+                  <div class="col-lg-6 p-1">
+                    <div class="p-news__list d-flex space-between">
+                      <div class="p-news__image">
+                        <img src="<?php $upload_dir = wp_upload_dir();
+                              echo $upload_dir['baseurl']; ?>/2019/07/shopping.png" alt="">
+                  </div>
+                        <div class="p-news__letter">
+                          <p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END col-md-6 -->
+                    <div class="col-lg-6 p-1">
+                      <div class="p-news__list d-flex space-between">
+                        <div class="p-news__image">
+                          <img src="<?php $upload_dir = wp_upload_dir();
+                              echo $upload_dir['baseurl']; ?>/2019/07/sightseeing.png" alt="">
+                  </div>
+                          <div class="p-news__letter">
+                            <p>Pellentesque ut diam cursus, gravida nibh et, vulputate tellus. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END col-md-6 -->
+                    </div>
+                    <!-- END .row -->
+                  </div>
+                  <!-- END .container -->
         </section>
         <section class="p-recommend pb-4">
-          <h2 class="p-recommend__headline">オススメのご紹介</h2>
+          <div class="container">
+            <div class="row">
+              <h2 class="p-recommend__headline">オススメのご紹介</h2>
+            </div>
+          </div>
           <div class="container p-recommend__content">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 p-recommend__inner">
                 <div class="p-recommend__image">
                   <img src="<?php $upload_dir = wp_upload_dir();
-                            echo $upload_dir['baseurl']; ?>/2019/07/hikawamaru.jpg" alt="">
+                            echo $upload_dir['baseurl']; ?>/2019/07/yokohama-hikawamaru.jpg" alt="氷川丸">
                 </div>
-                <h3>山下公園近くのイベント</h3>
-              </div>
-              <!-- END col-md-6 -->
-              <div class="col-md-6">
-                <div class="p-recommend__image">
-                  <img src="<?php $upload_dir = wp_upload_dir();
-                            echo $upload_dir['baseurl']; ?>/2019/07/yokohama_sankeien.jpg" alt="">
+                  <h3>山下公園近くのイベント</h3>
                 </div>
-                <!-- END .p-recommend__image -->
-                <h3>意外!?自然豊かなヨコハマ</h3>
-              </div>
-              <div class="col-md-6">
-                <div class="p-recommend__image">
-                  <img src="<?php $upload_dir = wp_upload_dir();
-                            echo $upload_dir['baseurl']; ?>/2019/07/hardrock_cafe.jpg" alt="">
+                <!-- END col-md-6 -->
+                <div class="col-md-6 p-recommend__inner">
+                  <div class="p-recommend__image">
+                    <img src="<?php $upload_dir = wp_upload_dir();
+                            echo $upload_dir['baseurl']; ?>/2019/07/yokohama-sankeien.jpg" alt="">
                 </div>
-                <!-- END .p-recommend__image -->
-                <h3>みなとみらいのオイシイを特集</h3>
-              </div>
-              <div class="col-md-6">
-                <div class="p-recommend__image">
-                  <img src="<?php $upload_dir = wp_upload_dir();
+                    <!-- END .p-recommend__image -->
+                    <h3>意外!?自然豊かなヨコハマ</h3>
+                  </div>
+                  <div class="col-md-6 p-recommend__inner">
+                    <div class="p-recommend__image">
+                      <img src="<?php $upload_dir = wp_upload_dir();
+                            echo $upload_dir['baseurl']; ?>/2019/07/yokohama-hamburger.jpg" alt="">
+                </div>
+                      <!-- END .p-recommend__image -->
+                      <h3>みなとみらいのオイシイを特集</h3>
+                    </div>
+                    <div class="col-md-6 p-recommend__inner">
+                      <div class="p-recommend__image">
+                        <img src="<?php $upload_dir = wp_upload_dir();
                             echo $upload_dir['baseurl']; ?>/2019/07/yokohama_night.jpg" alt="">
                 </div>
-                <!-- END .p-recommend__image -->
-                <h3>ステキがいっぱい!ヨコハマ夜景</h3>
-              </div>
-            </div>
-            <!-- END row -->
-          </div>
-          <!-- END container -->
+                        <!-- END .p-recommend__image -->
+                        <h3>ステキがいっぱい!ヨコハマ夜景</h3>
+                      </div>
+                    </div>
+                    <!-- END row -->
+                  </div>
+                  <!-- END container -->
         </section>
 
         <?php while (have_posts()) : the_post(); ?>
 
-          <?php get_template_part('loop-templates/content', 'top'); ?>
+        <?php get_template_part('loop-templates/content', 'top'); ?>
 
-          <?php
+        <?php
           // If comments are open or we have at least one comment, load up the comment template.
           if (comments_open() || get_comments_number()) :
             comments_template();
@@ -226,4 +240,4 @@ $container = get_theme_mod('understrap_container_type');
 
 </div><!-- #page-wrapper -->
 
-<?php get_footer(); ?>
+<?php get_footer();
